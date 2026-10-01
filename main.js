@@ -30,21 +30,6 @@ if (statement) {
   words.push(...statement.querySelectorAll(".w"));
 }
 
-// The swipe videos load and play only while on screen; with reduced motion they stay a still.
-const inView = new Set();
-const playing = new IntersectionObserver((entries) => {
-  for (const e of entries) {
-    if (e.isIntersecting) inView.add(e.target); else inView.delete(e.target);
-    if (e.isIntersecting && !reduced) e.target.play().catch(() => {});
-    else e.target.pause();
-  }
-}, { rootMargin: "200px 0px" });
-document.querySelectorAll("video").forEach((v) => playing.observe(v));
-// Browsers pause video in a background tab; start again on return.
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden && !reduced) inView.forEach((v) => v.play().catch(() => {}));
-});
-
 // The story: the step in the middle of the screen picks the phone's screen and the light.
 const steps = [...document.querySelectorAll(".step")];
 const screens = [...document.querySelectorAll(".story-phone .screens > *")];
