@@ -41,9 +41,9 @@
       </div>
     </div>
     <div class="stage" aria-label="Skärmbilder från Husfrid">
-      <div class="phone left"><img src="img/veckans-val.jpg" alt="Veckans val: en rätt att svepa på" width="662" height="1440"></div>
-      <div class="phone right"><img src="img/recept.jpg" alt="Hemmets recept med bilder" width="662" height="1440"></div>
-      <div class="phone center"><img src="img/hem.jpg" alt="Hem: veckans val och kvällens middag" width="662" height="1440"></div>
+      <div class="phone left"><picture><source srcset="img/veckans-val.avif" type="image/avif"><img src="img/veckans-val.jpg" alt="Veckans val: en rätt att svepa på" width="662" height="1440" decoding="async"></picture></div>
+      <div class="phone right"><picture><source srcset="img/recept.avif" type="image/avif"><img src="img/recept.jpg" alt="Hemmets recept med bilder" width="662" height="1440" decoding="async"></picture></div>
+      <div class="phone center"><picture><source srcset="img/hem.avif" type="image/avif"><img src="img/hem.jpg" alt="Hem: veckans val och kvällens middag" width="662" height="1440" decoding="async" fetchpriority="high"></picture></div>
     </div>
   </section>
 
@@ -60,11 +60,11 @@
   <section class="story" id="funktioner">
     <div class="story-phone" aria-hidden="true">
       <div class="phone"><div class="screens">
-        <img src="img/veckans-val.jpg" alt="" class="active">
-        <img src="img/vecka.jpg" alt="">
-        <img src="img/handla.jpg" alt="">
-        <img src="img/recept-detalj.jpg" alt="">
-        <img src="img/laga-nu.jpg" alt="">
+        <video src="img/veckans-val.mp4" poster="img/veckans-val-poster.jpg" muted loop playsinline preload="none" aria-label="Svep i Veckans val" class="active"></video>
+        <picture><source srcset="img/vecka.avif" type="image/avif"><img src="img/vecka.jpg" alt="" decoding="async" loading="lazy"></picture>
+        <picture><source srcset="img/handla.avif" type="image/avif"><img src="img/handla.jpg" alt="" decoding="async" loading="lazy"></picture>
+        <picture><source srcset="img/recept-detalj.avif" type="image/avif"><img src="img/recept-detalj.jpg" alt="" decoding="async" loading="lazy"></picture>
+        <picture><source srcset="img/laga-nu.avif" type="image/avif"><img src="img/laga-nu.jpg" alt="" decoding="async" loading="lazy"></picture>
       </div></div>
     </div>
     <div class="story-steps">
@@ -73,35 +73,35 @@
         <h2>Svep fram veckans middagar.</h2>
         <p>Varje torsdag får hemmet en hög rätter. Alla sveper på sin egen telefon, och det ni gillar blir nästa veckas middagar. Det tar ungefär en minut.</p>
         <div class="tags"><span>Alla får tycka till</span><span>Nytt varje vecka</span><span>Notis när det är din tur</span></div>
-        <div class="phone inline"><img src="img/veckans-val.jpg" alt="Veckans val" loading="lazy"></div>
+        <div class="phone inline"><video src="img/veckans-val.mp4" poster="img/veckans-val-poster.jpg" muted loop playsinline preload="none" aria-label="Svep i Veckans val"></video></div>
       </article>
       <article class="step" data-tone="cool">
         <div class="num">02 · VECKA</div>
         <h2>Hela veckan på ett ställe.</h2>
         <p>Middagar, luncher, rester och vem som lagar. Flytta en dag med ett drag, och lägg hela veckans varor på listan med ett tryck.</p>
         <div class="tags"><span>Vem lagar vad</span><span>Träning bredvid maten</span></div>
-        <div class="phone inline"><img src="img/vecka.jpg" alt="Veckans plan" loading="lazy"></div>
+        <div class="phone inline"><picture><source srcset="img/vecka.avif" type="image/avif"><img src="img/vecka.jpg" alt="Veckans plan" loading="lazy" decoding="async"></picture></div>
       </article>
       <article class="step" data-tone="green">
         <div class="num">03 · HANDLA</div>
         <h2>En lista. Hela hemmet.</h2>
         <p>Varorna sorteras efter hur butiken ser ut och syns direkt för alla. Den som står i affären bockar av, och det fungerar även när täckningen tar slut vid frysdisken.</p>
         <div class="tags"><span>Sorterad efter avdelning</span><span>Fungerar utan nät</span><span>Synkas direkt</span></div>
-        <div class="phone inline"><img src="img/handla.jpg" alt="Inköpslistan" loading="lazy"></div>
+        <div class="phone inline"><picture><source srcset="img/handla.avif" type="image/avif"><img src="img/handla.jpg" alt="Inköpslistan" loading="lazy" decoding="async"></picture></div>
       </article>
       <article class="step" data-tone="pink">
         <div class="num">04 · RECEPT</div>
         <h2>Era recept, äntligen samlade.</h2>
         <p>Klistra in en länk eller fota en sida ur kokboken så läses receptet in. Ändra portioner så räknas allt om, och lägg ingredienserna på listan.</p>
         <div class="tags"><span>Från länk eller foto</span><span>120 klassiker</span><span>Betyg från hela hemmet</span></div>
-        <div class="phone inline"><img src="img/recept-detalj.jpg" alt="Ett recept" loading="lazy"></div>
+        <div class="phone inline"><picture><source srcset="img/recept-detalj.avif" type="image/avif"><img src="img/recept-detalj.jpg" alt="Ett recept" loading="lazy" decoding="async"></picture></div>
       </article>
       <article class="step" data-tone="warm">
         <div class="num">05 · LAGA NU</div>
         <h2>Steg för steg vid spisen.</h2>
         <p>Stor text och en sak i taget. Vill du ha det ännu enklare skrivs stegen om på ett tryck, och timers ringer även när telefonen är låst.</p>
         <div class="tags"><span>En sak i taget</span><span>Timers på låsskärmen</span></div>
-        <div class="phone inline"><img src="img/laga-nu.jpg" alt="Laga nu" loading="lazy"></div>
+        <div class="phone inline"><picture><source srcset="img/laga-nu.avif" type="image/avif"><img src="img/laga-nu.jpg" alt="Laga nu" loading="lazy" decoding="async"></picture></div>
       </article>
     </div>
   </section>
@@ -114,7 +114,7 @@
       <p data-reveal style="--delay:.18s">Säg vad ni undviker och vad ni aldrig äter, så hoppas sådant över så gott det går.</p>
     </div>
     <div class="visual" data-reveal>
-      <div class="phone"><img src="img/taste-swipe.jpg" alt="Svep bland rätter när du går med" loading="lazy" width="662" height="1440"></div>
+      <div class="phone"><picture><source srcset="img/taste-swipe.avif" type="image/avif"><img src="img/taste-swipe.jpg" alt="Svep bland rätter när du går med" loading="lazy" width="662" height="1440" decoding="async"></picture></div>
       <span class="chip c1">Vegetariskt</span>
       <span class="chip c2">6 sparade</span>
       <span class="chip c3">Utan koriander</span>

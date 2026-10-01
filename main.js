@@ -6,13 +6,10 @@ const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 for (const row of document.querySelectorAll("[data-dishes]")) {
   const names = row.dataset.dishes.split(" ");
   for (const name of [...names, ...names]) {
-    const img = new Image();
-    img.src = `img/dishes/${name}.jpg`;
-    img.alt = "";
-    img.loading = "lazy";
-    img.width = 220;
-    img.height = 160;
-    row.append(img);
+    const picture = document.createElement("picture");
+    picture.innerHTML = `<source srcset="img/dishes/${name}.avif" type="image/avif">` +
+      `<img src="img/dishes/${name}.jpg" alt="" loading="lazy" decoding="async" width="220" height="160">`;
+    row.append(picture);
   }
 }
 
@@ -33,9 +30,24 @@ if (statement) {
   words.push(...statement.querySelectorAll(".w"));
 }
 
+// The swipe videos load and play only while on screen; with reduced motion they stay a still.
+const inView = new Set();
+const playing = new IntersectionObserver((entries) => {
+  for (const e of entries) {
+    if (e.isIntersecting) inView.add(e.target); else inView.delete(e.target);
+    if (e.isIntersecting && !reduced) e.target.play().catch(() => {});
+    else e.target.pause();
+  }
+}, { rootMargin: "200px 0px" });
+document.querySelectorAll("video").forEach((v) => playing.observe(v));
+// Browsers pause video in a background tab; start again on return.
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden && !reduced) inView.forEach((v) => v.play().catch(() => {}));
+});
+
 // The story: the step in the middle of the screen picks the phone's screen and the light.
 const steps = [...document.querySelectorAll(".step")];
-const screens = [...document.querySelectorAll(".story-phone .screens img")];
+const screens = [...document.querySelectorAll(".story-phone .screens > *")];
 const toneObserver = new IntersectionObserver((entries) => {
   for (const e of entries) {
     if (!e.isIntersecting) continue;
