@@ -1,4 +1,4 @@
-// Husfrid — scroll effects. Everything degrades to a plain page without JavaScript or with
+// Matro — scroll effects. Everything degrades to a plain page without JavaScript or with
 // reduced motion.
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
