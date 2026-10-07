@@ -24,10 +24,18 @@
 <ul>
 <li><strong>Konto:</strong> din e-postadress och ditt namn, som du får från Apple eller Google när du loggar in, och vilket sätt du loggar in med.</li>
 <li><strong>Det du lägger in:</strong> hem och vilka som är med i dem, inköpslistor, veckans mat, träningspass, recept med bilder, utgifter och vem som betalat, omdömen om rätter, val i Veckans val.</li>
+<li><strong>Profilbild:</strong> om du tar en. Den krypteras i din telefon innan den skickas, och bara telefonerna hos dem i dina hem har nycklarna som öppnar den. Vi kan inte se bilden, och inte heller Supabase som lagrar den.</li>
+<li><strong>Träningspass:</strong> de pass ni lägger in i veckan: vilken träning, vilken dag, ett mål om du anger det (sträcka eller tid) och vem som är med. Appen läser inget från Apple Hälsa eller andra träningsappar och mäter ingenting själv.</li>
 <li><strong>Matpreferenser:</strong> kost (till exempel vegetarisk), det du undviker (till exempel gluten eller nötter) och det du aldrig äter. Det sparas bara om du själv väljer att fylla i det, och du kan ta bort det när du vill.</li>
 <li><strong>Notiser:</strong> en kod för din telefon (APNs-token) om du slår på notiser, och de notiser som skickats till dig.</li>
 </ul>
 <p>Vi samlar inte in din position, dina kontakter eller något för reklam, och vi använder ingen analys- eller spårningstjänst.</p>
+<h2>Kamera, ansikte och mikrofon</h2>
+<ul>
+<li><strong>Profilbilden tas med ett leende.</strong> När du tar den använder appen den främre kameran och iPhones ansiktsspårning (ARKit) för att se hur mycket du ler. Det sker bara i telefonen och bara medan kameran är öppen: inga ansiktsdata sparas, skickas någonstans eller används till något annat. Det enda som sparas är bilden du själv väljer att använda.</li>
+<li><strong>Kameran</strong> används också när du fotar ett recept eller en rätt. Bilden sparas bara om du sparar receptet.</li>
+<li><strong>Säg din lista:</strong> när du pratar in varor tolkas ljudet i telefonen. Varken ljud eller text skickas iväg; det som sparas är varorna som hamnar på listan.</li>
+</ul>
 <h2>Varför</h2>
 <ul>
 <li>För att appen ska fungera: visa samma lista, vecka och recept för alla i hemmet och räkna ut vem som är skyldig vad. Det är grunden för nästan allt vi sparar (avtal, artikel 6.1 b i GDPR).</li>
@@ -36,13 +44,14 @@
 </ul>
 <h2>Vem ser vad</h2>
 <ul>
-<li>Det du lägger in i ett hem ser de andra i samma hem: listor, veckan, recept, utgifter, omdömen och matpreferenser. Ingen utanför hemmet ser det.</li>
+<li>Det du lägger in i ett hem ser de andra i samma hem: listor, veckan, träningspass, recept, utgifter, omdömen och matpreferenser. Ingen utanför hemmet ser det.</li>
+<li>Din profilbild ser de som är med i något av dina hem. Lämnar någon hemmet byts hemmets nyckel, så att de inte kan öppna nya bilder därifrån.</li>
 <li>Omdömen om rätter i Kokboken räknas ihop till ett snittbetyg som alla användare ser, utan namn.</li>
 <li>Vi säljer aldrig uppgifter och delar dem bara med de tjänster som behövs för att driva appen (se nedan).</li>
 </ul>
 <h2>Var uppgifterna finns</h2>
 <ul>
-<li><strong>Supabase</strong> lagrar databasen och bilderna, inom EU (Irland).</li>
+<li><strong>Supabase</strong> lagrar databasen och bilderna, inom EU (Irland). Profilbilderna ligger där krypterade.</li>
 <li><strong>Apple</strong> sköter inloggning med Apple, notiser och, om du använder dem, Apples AI-funktioner för att läsa recept. Med Apples Private Cloud Compute lämnar texten bara telefonen för att tolkas och sparas inte.</li>
 <li><strong>Google</strong> sköter inloggning om du loggar in med Google.</li>
 <li>Betalning för en prenumeration sköts av <strong>Apple App Store</strong>. Vi ser aldrig dina kortuppgifter.</li>
@@ -50,6 +59,7 @@
 <h2>Hur länge</h2>
 <ul>
 <li>Så länge du har kvar ditt konto.</li>
+<li>En profilbild du byter ut eller tar bort raderas direkt.</li>
 <li>Sådant du tar bort försvinner för gott efter 90 dagar. Det sparas så länge för att telefoner som varit utan nät ska hinna se att det är borttaget.</li>
 <li>Skickade notiser tas bort efter 30 dagar.</li>
 <li>När du raderar ditt konto tas dina uppgifter bort direkt (se nedan).</li>
@@ -58,7 +68,8 @@
 <ul>
 <li><strong>Se och ladda ner dina uppgifter:</strong> Inställningar → Konto → Ladda ner mina data ger dig allt vi har om dig som en fil.</li>
 <li><strong>Ändra:</strong> det mesta ändrar du direkt i appen. Annat ändrar vi om du hör av dig.</li>
-<li><strong>Radera ditt konto:</strong> Inställningar → Konto → Radera konto. Ditt konto, ditt namn, dina matpreferenser, omdömen, svep och egna recept tas bort. Hem där bara du är med tas bort med allt innehåll. I hem som du delar med andra ligger det du gjort kvar utan ditt namn, så att listor och utgifter stämmer för de andra, och dina recept där tas över av någon i hemmet. Har du loggat in med Apple tar vi också bort appens koppling till ditt Apple-ID.</li>
+<li><strong>Ta bort profilbilden:</strong> Inställningar → tryck på dig själv → Ta bort bilden.</li>
+<li><strong>Radera ditt konto:</strong> Inställningar → Konto → Radera konto. Ditt konto, ditt namn, din profilbild, dina matpreferenser, omdömen, svep och egna recept tas bort. Hem där bara du är med tas bort med allt innehåll. I hem som du delar med andra ligger det du gjort kvar utan ditt namn, så att listor och utgifter stämmer för de andra, och dina recept där tas över av någon i hemmet. Har du loggat in med Apple tar vi också bort appens koppling till ditt Apple-ID.</li>
 <li><strong>Ta tillbaka samtycke:</strong> välj bort det du undviker under Inställningar → Mat.</li>
 <li><strong>Klaga:</strong> du kan alltid vända dig till Integritetsskyddsmyndigheten (IMY), imy.se.</li>
 </ul>
