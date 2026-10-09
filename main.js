@@ -13,6 +13,14 @@ for (const row of document.querySelectorAll("[data-dishes]")) {
   }
 }
 
+// The strip's pause button (it also stops on hover and while it has keyboard focus).
+const strip = document.querySelector(".strip");
+const pause = document.querySelector(".strip-pause");
+pause?.addEventListener("click", () => {
+  const paused = strip.classList.toggle("paused");
+  pause.textContent = paused ? "Spela bilderna" : "Pausa bilderna";
+});
+
 // Fade things in as they arrive.
 const reveal = new IntersectionObserver((entries) => {
   for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); reveal.unobserve(e.target); }

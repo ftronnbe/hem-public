@@ -11,16 +11,18 @@
 <meta property="og:image" content="img/hem.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230B0B10'/%3E%3Cpath d='M7 15 16 7.5 25 15v9a1 1 0 0 1-1 1h-5v-6h-6v6H8a1 1 0 0 1-1-1z' fill='none' stroke='%23F2A35E' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-tone="warm">
+<a class="skip" href="#innehall">Hoppa till innehållet</a>
 <div class="ambient" aria-hidden="true"><span></span><span></span></div>
 
 <header class="nav">
   <a class="brand" href="./">
-    <span class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
+    <span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
     Matro
   </a>
-  <nav class="links">
+  <nav class="links" aria-label="Meny">
     <a href="#funktioner">Så funkar det</a>
     <a href="#varfor">Varför Matro</a>
     <a href="integritetspolicy">Integritet</a>
@@ -29,18 +31,18 @@
   <div class="progress" aria-hidden="true"></div>
 </header>
 
-<main>
+<main id="innehall">
   <section class="hero">
     <div class="hero-copy">
       <div class="eyebrow" data-reveal>För hela hushållet</div>
       <h1 data-reveal style="--delay:.08s">Veckan, handlingen och maten. <span class="grad">Tillsammans.</span></h1>
       <p class="lead" data-reveal style="--delay:.16s">Svep fram veckans middagar ihop, dela en inköpslista som alltid stämmer och laga steg för steg. Matro tar hand om tjatet, så att ni slipper.</p>
       <div class="actions" data-reveal style="--delay:.24s">
-        <span class="pill primary soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>Snart till iPhone</span>
+        <span class="pill primary soon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>Snart till iPhone</span>
         <a class="pill ghost" href="#funktioner">Se hur det funkar</a>
       </div>
     </div>
-    <div class="stage" aria-label="Skärmbilder från Matro">
+    <div class="stage" role="group" aria-label="Skärmbilder från Matro">
       <div class="phone left"><picture><source srcset="img/veckans-val.avif" type="image/avif"><img src="img/veckans-val.jpg" alt="Veckans val: en rätt att svepa på" width="662" height="1440" decoding="async"></picture></div>
       <div class="phone right"><picture><source srcset="img/recept.avif" type="image/avif"><img src="img/recept.jpg" alt="Hemmets recept med bilder" width="662" height="1440" decoding="async"></picture></div>
       <div class="phone center"><picture><source srcset="img/hem.avif" type="image/avif"><img src="img/hem.jpg" alt="Hem: veckans val och kvällens middag" width="662" height="1440" decoding="async" fetchpriority="high"></picture></div>
@@ -48,6 +50,7 @@
   </section>
 
   <section class="strip" aria-label="Rätter i Kokboken">
+    <button class="strip-pause pill ghost" type="button">Pausa bilderna</button>
     <div class="row" data-dishes="kottbullar-potatismos svamprisotto ugnsbakad-lax-citron-dill pad-thai shakshuka tacos-kottfars spaghetti-carbonara kalops butter-chicken pannkakor"></div>
     <div class="row" data-dishes="wallenbergare miso-ramen kycklingsouvlaki-tzatziki pasta-al-limone stekt-stromming-potatismos ratatouille hemgjord-pizza tom-kha-gai paella pumpasoppa"></div>
     <p class="caption">120 klassiker i Kokboken, från kalops till pad thai.</p>
@@ -125,22 +128,22 @@
     <h2 data-reveal>Byggd för vardagen. Och för er.</h2>
     <div class="grid">
       <div class="card" data-reveal>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 4.2-2.7M22 8.8a15 15 0 0 0-11-3.7"/><path d="M5.5 12.5a10 10 0 0 1 3.4-1.9M18.5 12.5a10 10 0 0 0-2.3-1.4"/><path d="M9 16a5 5 0 0 1 6 0"/><path d="M12 20h.01"/><path d="m3 3 18 18"/></svg></div>
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 4.2-2.7M22 8.8a15 15 0 0 0-11-3.7"/><path d="M5.5 12.5a10 10 0 0 1 3.4-1.9M18.5 12.5a10 10 0 0 0-2.3-1.4"/><path d="M9 16a5 5 0 0 1 6 0"/><path d="M12 20h.01"/><path d="m3 3 18 18"/></svg></div>
         <h3>Funkar utan nät</h3>
         <p>Det du gör syns direkt och skickas när täckningen är tillbaka. Listan och recepten finns kvar i telefonen.</p>
       </div>
       <div class="card" data-reveal style="--delay:.08s">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10.5 17.5h3"/></svg></div>
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10.5 17.5h3"/></svg></div>
         <h3>Även på iPad</h3>
         <p>Planera veckan och bläddra bland recepten på den stora skärmen. Allt synkas med hemmets telefoner.</p>
       </div>
       <div class="card" data-reveal style="--delay:.16s">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2 12.5 8 7.5l6 5V20a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><path d="M11 6.5 16 2.5l6 5V20a1 1 0 0 1-1 1h-4"/></svg></div>
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2 12.5 8 7.5l6 5V20a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><path d="M11 6.5 16 2.5l6 5V20a1 1 0 0 1-1 1h-4"/></svg></div>
         <h3>Flera hem</h3>
         <p>Sommarstugan, eller varannan vecka hos pappa. Var med i flera hem och byt med ett tryck.</p>
       </div>
       <div class="card" data-reveal style="--delay:.24s">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div>
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div>
         <h3>Hemma i iOS</h3>
         <p>Liquid Glass, timers och matlagning på låsskärmen, och Logga in med Apple.</p>
       </div>
@@ -148,7 +151,7 @@
   </section>
 
   <section class="closing" id="snart">
-    <div class="mark" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+    <div class="mark" data-reveal aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
     <h2 data-reveal style="--delay:.06s">Snart till iPhone och iPad.</h2>
     <p data-reveal style="--delay:.12s">Matro testas just nu av vänner och familj. Vill du vara med från start? Hör av dig till <span class="contact">team.app.consortium{at}gmail{dot}com</span>.</p>
   </section>
@@ -160,6 +163,7 @@
     <span class="spacer"></span>
     <a href="integritetspolicy">Integritetspolicy</a>
     <a href="anvandarvillkor">Användarvillkor</a>
+    <a href="tillganglighet">Tillgänglighet</a>
   </div>
 </footer>
 
