@@ -1,14 +1,17 @@
 // Matro — scroll effects. Everything degrades to a plain page without JavaScript or with
 // reduced motion.
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+// The English pages live in en/ and share the images: `data-base` on <body> is the way back up.
+const base = document.body.dataset.base || "";
+const english = document.documentElement.lang === "en";
 
 // Dish photos for the strip, twice over so the loop has no seam.
 for (const row of document.querySelectorAll("[data-dishes]")) {
   const names = row.dataset.dishes.split(" ");
   for (const name of [...names, ...names]) {
     const picture = document.createElement("picture");
-    picture.innerHTML = `<source srcset="img/dishes/${name}.avif" type="image/avif">` +
-      `<img src="img/dishes/${name}.jpg" alt="" loading="lazy" decoding="async" width="220" height="160">`;
+    picture.innerHTML = `<source srcset="${base}img/dishes/${name}.avif" type="image/avif">` +
+      `<img src="${base}img/dishes/${name}.jpg" alt="" loading="lazy" decoding="async" width="220" height="160">`;
     row.append(picture);
   }
 }
@@ -18,7 +21,7 @@ const strip = document.querySelector(".strip");
 const pause = document.querySelector(".strip-pause");
 pause?.addEventListener("click", () => {
   const paused = strip.classList.toggle("paused");
-  pause.textContent = paused ? "Spela bilderna" : "Pausa bilderna";
+  pause.textContent = english ? (paused ? "Play the photos" : "Pause the photos") : (paused ? "Spela bilderna" : "Pausa bilderna");
 });
 
 // Fade things in as they arrive.
