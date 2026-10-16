@@ -18,68 +18,79 @@
 </header>
 <main class="legal" id="innehall">
 <h1>Integritetspolicy</h1>
-<p class="date">Gäller från 1 oktober 2026.</p>
-<p>Matro är en app för hushållet: inköpslista, veckans mat, recept och utgifter som ni delar med varandra. Här står vilka uppgifter appen sparar om dig, varför, var de finns och hur du tar bort dem.</p>
-<h2>Kontakt</h2>
+<p class="date">Gäller från 1 oktober 2026. Uppdaterad 16 oktober 2026.</p>
+<p>Matro är en app för hushållet: inköpslista, veckans mat, recept och utgifter som ni delar med varandra. Här står vilka uppgifter appen sparar om dig, varför, var de finns och hur du tar bort dem. Det mesta är likadant på iPhone och Android; där något skiljer sig står det vad som gäller om du använder Matro på Android.</p>
+<h2 id="kontakt">Kontakt</h2>
 <p>Frågor om dina uppgifter skickar du till team.app.consortium{at}gmail{dot}com.</p>
-<h2>Vad vi sparar</h2>
+<h2 id="vad-vi-sparar">Vad vi sparar</h2>
 <ul>
 <li><strong>Konto:</strong> din e-postadress och ditt namn, som du får från Apple eller Google när du loggar in, och vilket sätt du loggar in med.</li>
 <li><strong>Det du lägger in:</strong> hem och vilka som är med i dem, inköpslistor, veckans mat, träningspass, recept med bilder, utgifter och vem som betalat, omdömen om rätter, val i Veckans val.</li>
 <li><strong>Profilbild:</strong> om du tar en. Den krypteras i din telefon innan den skickas, och bara telefonerna hos dem i dina hem har nycklarna som öppnar den. Vi kan inte se bilden, och inte heller Supabase som lagrar den.</li>
 <li><strong>Träningspass:</strong> de pass ni lägger in i veckan: vilken träning, vilken dag, ett mål om du anger det (sträcka eller tid) och vem som är med. Appen läser inget från Apple Hälsa eller andra träningsappar och mäter ingenting själv.</li>
 <li><strong>Matpreferenser:</strong> kost (till exempel vegetarisk) och det du undviker (till exempel gluten, nötter eller koriander). Det sparas bara om du själv väljer att fylla i det, och du kan ta bort det när du vill.</li>
-<li><strong>Notiser:</strong> en kod för din telefon (APNs-token) om du slår på notiser, och de notiser som skickats till dig.</li>
-<li><strong>Souschefen och Matro Plus:</strong> hur många uppdrag hemmet gett souschefen (Matros AI-funktioner) per månad och av vilket slag (till exempel en guide eller en fråga), vilka uppdrag hemmet tjänat, och om du köper Matro Plus: köpets id hos Apple, vilken prenumeration och till när den gäller. Själva uppdragens innehåll sparas inte för det.</li>
-<li><strong>Kraschrapporter:</strong> om appen kraschar eller hänger sig skickar den en teknisk rapport: var i koden det hände, appens version, iOS-version och telefonmodell. Rapporten innehåller inget du lagt in och kopplas inte till dig eller ditt konto.</li>
+<li><strong>Notiser:</strong> om du slår på notiser en kod för din telefon (APNs-token på iPhone, FCM-token på Android) och om det är en iPhone eller en Android-telefon. På Android sparas också vilket språk du har appen på, så att notisen kan skrivas på ditt språk. Och de notiser som skickats till dig.</li>
+<li><strong>Souschefen och Matro Plus:</strong> hur många uppdrag hemmet gett souschefen (Matros AI-funktioner) per månad och av vilket slag (till exempel en guide eller en fråga), vilka uppdrag hemmet tjänat, och om du köper Matro Plus: köpets id hos Apple eller, på Android, köpets kod hos Google Play (purchase token), vilken prenumeration, dess status, till när den gäller och om den är i en gratis provperiod. Själva uppdragens innehåll sparas inte för det.</li>
+<li><strong>Souschefens anrop på Android:</strong> på Android går souschefens uppdrag via vår server. För varje anrop sparas en kort logg: vem som gjorde det, i vilket hem, vilket slags uppdrag, om det drog ett av hemmets uppdrag, om det gick bra och hur stort det var (antal tokens). Vad du frågade och vad souschefen svarade sparas aldrig, varken där eller i serverns loggar.</li>
+<li><strong>Kraschrapporter:</strong> om appen kraschar eller hänger sig skickar den en teknisk rapport: var i koden det hände, appens version, systemets version (iOS eller Android) och telefonmodell. Rapporten innehåller inget du lagt in och kopplas inte till dig eller ditt konto.</li>
 </ul>
 <p>Vi samlar inte in din position, dina kontakter eller något för reklam, och vi använder ingen analys- eller spårningstjänst.</p>
-<h2>Kamera, ansikte och mikrofon</h2>
+<h2 id="kamera-ansikte-och-mikrofon">Kamera, ansikte och mikrofon</h2>
 <ul>
-<li><strong>Profilbilden tas med ett leende.</strong> När du tar den använder appen den främre kameran och iPhones ansiktsspårning (ARKit) för att se hur mycket du ler. Det sker bara i telefonen och bara medan kameran är öppen: inga ansiktsdata sparas, skickas någonstans eller används till något annat. Det enda som sparas är bilden du själv väljer att använda.</li>
+<li><strong>Profilbilden tas med ett leende.</strong> När du tar den använder appen den främre kameran och telefonens ansiktsspårning (på iPhone ARKit) för att se hur mycket du ler. Det sker bara i telefonen och bara medan kameran är öppen: inga ansiktsdata sparas, skickas någonstans eller används till något annat. Det enda som sparas är bilden du själv väljer att använda.</li>
 <li><strong>Kameran</strong> används också när du fotar ett recept eller en rätt. Bilden sparas bara om du sparar receptet.</li>
 <li><strong>Säg din lista:</strong> när du pratar in varor tolkas ljudet i telefonen. Varken ljud eller text skickas iväg; det som sparas är varorna som hamnar på listan.</li>
 </ul>
-<h2>Varför</h2>
+<h2 id="varfor">Varför</h2>
 <ul>
 <li>För att appen ska fungera: visa samma lista, vecka och recept för alla i hemmet och räkna ut vem som är skyldig vad. Det är grunden för nästan allt vi sparar (avtal, artikel 6.1 b i GDPR).</li>
 <li>Matpreferenser sparas för att välja förslag som passar hemmet. Det du undviker sparas med ditt samtycke (artikel 9.2 a). Du ger det genom att välja något, och tar tillbaka det genom att välja bort det.</li>
 <li>Notiser skickas bara om du har slagit på dem.</li>
+<li>Kontrollen med Google Play Integrity, gränsen för hur många anrop till souschefen en person kan göra och loggen över anropen finns för att skydda tjänsten mot missbruk (berättigat intresse, artikel 6.1 f).</li>
 </ul>
-<h2>Vem ser vad</h2>
+<h2 id="vem-ser-vad">Vem ser vad</h2>
 <ul>
 <li>Det du lägger in i ett hem ser de andra i samma hem: listor, veckan, träningspass, recept, utgifter, omdömen och matpreferenser. Ingen utanför hemmet ser det.</li>
 <li>Din profilbild ser de som är med i något av dina hem. Lämnar någon hemmet byts hemmets nyckel, så att de inte kan öppna nya bilder därifrån.</li>
 <li>Omdömen om rätter i Kokboken räknas ihop till ett snittbetyg som alla användare ser, utan namn.</li>
 <li>Vi säljer aldrig uppgifter och delar dem bara med de tjänster som behövs för att driva appen (se nedan).</li>
 </ul>
-<h2>Var uppgifterna finns</h2>
+<h2 id="var-uppgifterna-finns">Var uppgifterna finns</h2>
 <ul>
-<li><strong>Supabase</strong> lagrar databasen och bilderna, inom EU (Irland). Profilbilderna ligger där krypterade.</li>
-<li><strong>Apple</strong> sköter inloggning med Apple, notiser och, om du använder dem, Apples AI-funktioner för att läsa recept. Med Apples Private Cloud Compute lämnar texten bara telefonen för att tolkas och sparas inte.</li>
-<li><strong>Anthropic</strong> (USA) läser recept, skriver guider och svarar på frågor åt souschefen på telefoner som inte har Apple Intelligence igång, och bara om du har tillåtit det. Då skickas receptets text och bilder dit för att läsas. Anthropic behandlar dem för vår räkning, inte för att träna sina modeller, och överföringen till USA sker med EU:s standardavtalsklausuler.</li>
+<li><strong>Supabase</strong> lagrar databasen och bilderna och kör vår server, inom EU (Irland). Profilbilderna ligger där krypterade.</li>
+<li><strong>Apple</strong> sköter inloggning med Apple, notiser till iPhone och, om du använder dem, Apples AI-funktioner för att läsa recept. Med Apples Private Cloud Compute lämnar texten bara telefonen för att tolkas och sparas inte.</li>
+<li><strong>Anthropic</strong> (USA) läser recept, skriver guider och svarar på frågor åt souschefen, och bara om du har tillåtit det. På iPhone gäller det telefoner som inte har Apple Intelligence igång, och telefonen skickar uppdraget direkt till Anthropic. På Android går alla souschefens uppdrag till Anthropic via vår server hos Supabase, som skickar dem vidare utan att spara innehållet. Receptets text och bilder skickas dit för att läsas. Anthropic behandlar dem för vår räkning, inte för att träna sina modeller, och överföringen till USA sker med EU:s standardavtalsklausuler.</li>
 <li><strong>Google</strong> sköter inloggning om du loggar in med Google.</li>
-<li>Betalning för en prenumeration sköts av <strong>Apple App Store</strong>. Vi ser aldrig dina kortuppgifter.</li>
+<li><strong>Google Firebase Cloud Messaging</strong> levererar notiser till Android-telefoner. Google får då telefonens notiskod och notisens innehåll: rubrik, text och ibland en bild på rätten. Texten skrivs på vår server, på det språk du har appen på.</li>
+<li><strong>Google Play Integrity</strong> kontrollerar på Android att anrop till souschefen kommer från den riktiga Matro-appen från Google Play på en riktig telefon. Appen ber Google om ett kontrollbevis (integrity token) för just det anropet, och vår server låter Google läsa av det. Google tar fram svaret utifrån uppgifter om appen, telefonen och om appen är hämtad från Google Play. Google får inte anropets innehåll, bara ett kontrollvärde (hash) av det, och vi sparar inte svaret.</li>
+<li>Betalning för en prenumeration sköts av <strong>Apple App Store</strong> på iPhone och av <strong>Google Play</strong> på Android. Vi ser aldrig dina kortuppgifter. Vår server hämtar köpets status direkt från Apple eller Google för att ge hemmet Matro Plus.</li>
 </ul>
-<h2>Hur länge</h2>
+<h2 id="hur-lange">Hur länge</h2>
 <ul>
 <li>Så länge du har kvar ditt konto.</li>
 <li>En profilbild du byter ut eller tar bort raderas direkt.</li>
 <li>Sådant du tar bort försvinner för gott efter 90 dagar. Det sparas så länge för att telefoner som varit utan nät ska hinna se att det är borttaget.</li>
 <li>Skickade notiser tas bort efter 30 dagar.</li>
+<li>Loggen över souschefens anrop via vår server tas bort efter två dagar.</li>
 <li>Kraschrapporter tas bort efter sex månader.</li>
 <li>När du raderar ditt konto tas dina uppgifter bort direkt (se nedan).</li>
 </ul>
-<h2>Dina rättigheter</h2>
+<h2 id="dina-rattigheter">Dina rättigheter</h2>
 <ul>
 <li><strong>Se och ladda ner dina uppgifter:</strong> Inställningar → Konto → Ladda ner mina data ger dig allt vi har om dig som en fil.</li>
 <li><strong>Ändra:</strong> det mesta ändrar du direkt i appen. Annat ändrar vi om du hör av dig.</li>
 <li><strong>Ta bort profilbilden:</strong> Inställningar → tryck på dig själv → Ta bort bilden.</li>
-<li><strong>Radera ditt konto:</strong> Inställningar → Konto → Radera konto. Ditt konto, ditt namn, din profilbild, dina matpreferenser, omdömen, svep och egna recept tas bort. Hem där bara du är med tas bort med allt innehåll. I hem som du delar med andra ligger det du gjort kvar utan ditt namn, så att listor och utgifter stämmer för de andra, och dina recept där tas över av någon i hemmet. Har du loggat in med Apple tar vi också bort appens koppling till ditt Apple-ID.</li>
+<li><strong>Radera ditt konto:</strong> se nedan.</li>
 <li><strong>Ta tillbaka samtycke:</strong> välj bort det du undviker under Inställningar → Mat.</li>
 <li><strong>Klaga:</strong> du kan alltid vända dig till Integritetsskyddsmyndigheten (IMY), imy.se.</li>
 </ul>
-<h2>Ändringar</h2>
+<h2 id="radera-ditt-konto">Radera ditt konto</h2>
+<ul>
+<li><strong>I appen:</strong> Inställningar → Konto → Radera konto. Ditt konto, ditt namn, din profilbild, dina matpreferenser, omdömen, svep och egna recept tas bort. Hem där bara du är med tas bort med allt innehåll. I hem som du delar med andra ligger det du gjort kvar utan ditt namn, så att listor och utgifter stämmer för de andra, och dina recept där tas över av någon i hemmet. Har du loggat in med Apple tar vi också bort appens koppling till ditt Apple-ID.</li>
+<li><strong>Utan appen:</strong> har du inte appen kvar kan du be oss radera ditt konto i Matro genom att mejla team.app.consortium{at}gmail{dot}com från den e-postadress du loggar in med. Vi raderar det på samma sätt inom en månad.</li>
+<li><strong>Matro Plus:</strong> en prenumeration avslutas inte av att kontot raderas. Säg upp den först, i inställningarna för ditt Apple-ID eller under Prenumerationer i Google Play.</li>
+</ul>
+<h2 id="andringar">Ändringar</h2>
 <p>Ändras policyn på ett sätt som spelar roll för dig säger vi till i appen innan det gäller.</p>
 </main>
 <footer><div class="inner"><span>© 2026 Matro</span><span class="spacer"></span><a href="integritetspolicy">Integritetspolicy</a><a href="anvandarvillkor">Användarvillkor</a><a href="tillganglighet">Tillgänglighet</a><a href="en/privacy" hreflang="en" lang="en">English</a></div></footer>
