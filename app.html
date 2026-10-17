@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hämta Matro</title>
+<script>
+// The link every Matro invite and share carries (INV-03): iPhones and iPads go to the App Store,
+// Android to Google Play, everything else (and anyone without JavaScript) sees this page with both.
+// ?stay shows the page on a phone too.
+(function () {
+  var ua = navigator.userAgent || "";
+  var apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  var store = apple ? "https://apps.apple.com/app/id6816677523"
+    : android ? "https://play.google.com/store/apps/details?id=se.flipware.hem" : null;
+  if (store && !/[?&]stay\b/.test(location.search)) location.replace(store);
+})();
+</script>
+<meta name="description" content="Matro finns till iPhone, iPad och Android: veckans middagar, inköpslistan och recepten för hela hushållet.">
+<meta name="theme-color" content="#0B0B10">
+<meta property="og:title" content="Hämta Matro">
+<meta property="og:description" content="Matro finns till iPhone, iPad och Android: veckans middagar, inköpslistan och recepten för hela hushållet.">
+<meta property="og:image" content="https://ftronnbe.github.io/hem-public/img/hem.jpg">
+<link rel="alternate" hreflang="en" href="en/app">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230B0B10'/%3E%3Cpath d='M7 15 16 7.5 25 15v9a1 1 0 0 1-1 1h-5v-6h-6v6H8a1 1 0 0 1-1-1z' fill='none' stroke='%23F2A35E' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-tone="warm">
+<a class="skip" href="#innehall">Hoppa till innehållet</a>
+<div class="ambient" aria-hidden="true"><span></span><span></span></div>
+
+<header class="nav">
+  <a class="brand" href="./">
+    <span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
+    Matro
+  </a>
+  <a class="pill ghost" href="./" style="margin-left:auto">Till startsidan</a>
+</header>
+
+<main id="innehall">
+  <section class="closing" style="min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:120px">
+    <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+    <h1 style="font-size:clamp(40px, 6vw, 76px);line-height:1.02;margin-bottom:20px">Hämta Matro.</h1>
+    <p>Matro finns till iPhone, iPad och Android. Öppnar du den här länken på telefonen kommer du direkt till rätt butik.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="pill primary" href="https://apps.apple.com/app/id6816677523">App Store · iPhone och iPad</a>
+      <a class="pill ghost" href="https://play.google.com/store/apps/details?id=se.flipware.hem">Google Play · Android</a>
+    </div>
+    <p style="margin-top:30px;font-size:16px;color:var(--text-3)">Har du fått en inbjudan? Skriv in koden från meddelandet när appen frågar.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="inner">
+    <span>© 2026 Matro</span>
+    <span class="spacer"></span>
+    <a href="integritetspolicy">Integritetspolicy</a>
+    <a href="anvandarvillkor">Användarvillkor</a>
+    <a href="tillganglighet">Tillgänglighet</a>
+    <a href="en/app" hreflang="en" lang="en">English</a>
+  </div>
+</footer>
+</body>
+</html>
