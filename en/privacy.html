@@ -18,7 +18,7 @@
 </header>
 <main class="legal" id="innehall">
 <h1>Privacy policy</h1>
-<p class="date">Effective from October 1, 2026. Updated October 16, 2026.</p>
+<p class="date">Effective from October 21, 2026.</p>
 <p>Matro is an app for the household: a shopping list, the week's food, recipes and expenses that you share with each other. This policy says what the app stores about you, why, where it is kept and how you delete it. Most things are the same on iPhone and Android; where something differs, it says what applies if you use Matro on Android.</p>
 <h2 id="contact">Contact</h2>
 <p>Send questions about your data to team.app.consortium{at}gmail{dot}com.</p>
@@ -31,22 +31,33 @@
 <li><strong>Food preferences:</strong> diet (for example vegetarian) and what you avoid (for example gluten, nuts or cilantro). This is only stored if you choose to fill it in, and you can remove it whenever you like.</li>
 <li><strong>Notifications:</strong> if you turn on notifications, a code for your phone (an APNs token on iPhone, an FCM token on Android) and whether it is an iPhone or an Android phone. On Android we also store which language you use the app in, so that the notification can be written in your language. And the notifications that have been sent to you.</li>
 <li><strong>The Sous-chef and Matro Plus:</strong> how many tasks the home has given the Sous-chef (Matro's AI features) per month and of what kind (for example a guide or a question), which tasks the home has earned, and if you buy Matro Plus: the purchase's ID at Apple or, on Android, the purchase's code at Google Play (purchase token), which subscription, its status, until when it is valid and whether it is in a free trial. The content of the tasks is not stored for this.</li>
-<li><strong>The Sous-chef's calls on Android:</strong> on Android, the Sous-chef's tasks go through our server. For each call a short log is kept: who made it, in which home, what kind of task, whether it used one of the home's tasks, whether it worked and how big it was (number of tokens). What you asked and what the Sous-chef answered are never stored, neither there nor in the server's logs.</li>
+<li><strong>The Sous-chef's calls in the cloud:</strong> when the Sous-chef works in the cloud (always on Android, on iPhone when Apple Intelligence isn't turned on), its tasks go through our server. For each call a short log is kept: who made it, in which home, what kind of task, whether it used one of the home's tasks, whether it worked and how big it was (number of tokens). What you asked and what the Sous-chef answered are never stored, neither there nor in the server's logs.</li>
+<li><strong>Your choice about usage statistics:</strong> whether you said yes or no, and when. It is stored with your account so that we can count how many chose yes, and it follows you to a new phone.</li>
 <li><strong>Crash reports:</strong> if the app crashes or hangs, it sends a technical report: where in the code it happened, the app's version, the system version (iOS or Android) and the phone model. The report contains nothing you have added and is not linked to you or your account.</li>
 </ul>
-<p>We don't collect your location, your contacts or anything for advertising, and we use no analytics or tracking service.</p>
+<p>We don't collect your location or your contacts, we use no advertising ID and no tracking across apps, and we show no ads. Statistics about how the app is used are only collected if you say yes yourself (see Usage statistics).</p>
 <h2 id="camera-face-and-microphone">Camera, face and microphone</h2>
 <ul>
 <li><strong>The profile picture is taken with a smile.</strong> When you take it, the app uses the front camera and the phone's face tracking (ARKit on iPhone) to see how much you are smiling. This only happens on the phone and only while the camera is open: no face data is stored, sent anywhere or used for anything else. The only thing stored is the picture you choose to use.</li>
 <li><strong>The camera</strong> is also used when you take a photo of a recipe or a dish. The photo is only stored if you save the recipe.</li>
 <li><strong>Say your list:</strong> when you speak items into the list, the audio is interpreted on the phone. Neither audio nor text is sent to us; what is stored is the items that end up on the list. On Android phones that can't recognise speech on the phone, the phone's speech service (Google's speech recognition) is used, and the audio may then be processed by Google under its terms.</li>
 </ul>
+<h2 id="usage-statistics">Usage statistics</h2>
+<ul>
+<li><strong>Only if you say yes.</strong> The first time, the app asks "Help us make Matro better". If you say no, or don't answer, nothing is sent and the statistics tool isn't even started. You can change your mind any time: Settings → Account and privacy → Share usage statistics. Turning it off stops the collection right away.</li>
+<li><strong>What is collected:</strong> which features are used and how often, for example that a week was planned, that a recipe was brought in or that a list was read in by voice; how the steps of buying Matro Plus went (that the offer was shown, which plan you chose, whether the purchase went through); a coarse kind of error code (for example "no network") when something went wrong; how long something took; and the app's version, the phone model and system version, the language, how many people are in the home, how long the home has existed and whether it has Matro Plus.</li>
+<li><strong>Who it is about:</strong> a code worked out from your account and your home in a way that can't be reversed (a hash). The code is a pseudonym, not your name, and it follows you between your phones.</li>
+<li><strong>Never:</strong> names, email address, recipes, shopping rows, search texts, questions to the Sous-chef, photos, location, contacts or any advertising ID. The events have fixed names and only fixed values, never text you have written.</li>
+<li><strong>Who processes it:</strong> PostHog Inc. processes the statistics on our behalf, on servers in the EU (Frankfurt), under a data processing agreement. It is not used for advertising and is not sold.</li>
+<li><strong>Basis:</strong> your consent (Article 6(1)(a) GDPR). You can withdraw it any time without anything changing in the app.</li>
+</ul>
 <h2 id="why">Why</h2>
 <ul>
 <li>So that the app works: to show the same list, week and recipes to everyone in the home and to work out who owes what. This is the basis for almost everything we store (contract, Article 6(1)(b) GDPR).</li>
 <li>Food preferences are stored to choose suggestions that suit the home. What you avoid is stored with your consent (Article 9(2)(a)). You give it by choosing something, and withdraw it by unselecting it.</li>
 <li>Notifications are only sent if you have turned them on.</li>
-<li>The check with Google Play Integrity, the limit on how many calls to the Sous-chef one person can make and the log of those calls are there to protect the service from abuse (legitimate interest, Article 6(1)(f)).</li>
+<li>Statistics about how the app is used are only collected with your consent (Article 6(1)(a)), so that we can see what is used, what goes wrong and how buying Matro Plus works, and make the app better.</li>
+<li>The checks with Google Play Integrity and Apple App Attest, the limit on how many calls to the Sous-chef one person can make and the log of those calls are there to protect the service from abuse (legitimate interest, Article 6(1)(f)).</li>
 </ul>
 <h2 id="who-sees-what">Who sees what</h2>
 <ul>
@@ -59,10 +70,12 @@
 <ul>
 <li><strong>Supabase</strong> stores the database and the photos and runs our server, within the EU (Ireland). The profile pictures are stored there encrypted.</li>
 <li><strong>Apple</strong> handles Sign in with Apple, notifications to iPhones and, if you use them, Apple's AI features for reading recipes. With Apple's Private Cloud Compute the text only leaves the phone to be interpreted and is not stored.</li>
-<li><strong>Anthropic</strong> (USA) reads recipes, writes guides and answers questions for the Sous-chef, and only if you have allowed it. On iPhone this applies to phones that don't have Apple Intelligence turned on, and the phone sends the task straight to Anthropic. On Android all of the Sous-chef's tasks go to Anthropic through our server at Supabase, which passes them on without storing their content. The recipe's text and photos are then sent there to be read. Anthropic processes them on our behalf, not to train its models, and the transfer to the USA is covered by the EU's standard contractual clauses.</li>
+<li><strong>Anthropic</strong> (USA) reads recipes, writes guides and answers questions for the Sous-chef, and only if you have allowed it. On iPhone this applies to phones that don't have Apple Intelligence turned on; on Android to all of the Sous-chef's tasks. The tasks go to Anthropic through our server at Supabase, which passes them on without storing their content. The recipe's text and photos are then sent there to be read. Anthropic processes them on our behalf, not to train its models, and the transfer to the USA is covered by the EU's standard contractual clauses.</li>
+<li><strong>PostHog</strong> (PostHog Inc.) receives the usage statistics, only if you said yes, and stores them in the EU (Frankfurt).</li>
 <li><strong>Google</strong> handles sign-in if you sign in with Google.</li>
 <li><strong>Google Firebase Cloud Messaging</strong> delivers notifications to Android phones. Google then gets the phone's notification code and the notification's content: title, text and sometimes a photo of the dish. The text is written on our server, in the language you use the app in.</li>
 <li><strong>Google Play Integrity</strong> checks on Android that calls to the Sous-chef come from the genuine Matro app from Google Play on a genuine phone. The app asks Google for a proof (integrity token) for that very call, and our server has Google read it. Google produces the answer from information about the app, the phone and whether the app was installed from Google Play. Google doesn't get the call's content, only a check value (hash) of it, and we don't store the answer.</li>
+<li><strong>Apple App Attest</strong> checks on iPhone that calls to the Sous-chef come from the genuine Matro app on a genuine iPhone. The phone makes a key that Apple vouches for once, and every call is signed with it; our server checks the signature. We keep the key's public part and a counter, nothing else, and Apple doesn't get the call's content.</li>
 <li>Payment for a subscription is handled by the <strong>Apple App Store</strong> on iPhone and by <strong>Google Play</strong> on Android. We never see your card details. Our server reads the purchase's status straight from Apple or Google to give the home Matro Plus.</li>
 </ul>
 <h2 id="how-long">How long</h2>
@@ -73,6 +86,7 @@
 <li>Sent notifications are removed after 30 days.</li>
 <li>The log of the Sous-chef's calls through our server is removed after two days.</li>
 <li>Crash reports are removed after six months.</li>
+<li>Usage statistics are kept at PostHog for 12 months and then removed.</li>
 <li>When you delete your account, your data is removed right away (see below).</li>
 </ul>
 <h2 id="your-rights">Your rights</h2>
@@ -81,7 +95,7 @@
 <li><strong>Change:</strong> most things you change directly in the app. Other things we change if you get in touch.</li>
 <li><strong>Remove the profile picture:</strong> Settings → tap yourself → Remove photo.</li>
 <li><strong>Delete your account:</strong> see below.</li>
-<li><strong>Withdraw consent:</strong> unselect what you avoid under Settings → Food.</li>
+<li><strong>Withdraw consent:</strong> unselect what you avoid under Settings → Food. Turn the usage statistics off under Settings → Account and privacy → Share usage statistics. If you want statistics already collected about you deleted, email us and we will remove them.</li>
 <li><strong>Complain:</strong> you can always turn to the Swedish Authority for Privacy Protection (IMY), imy.se, or to the data protection authority in the country where you live.</li>
 </ul>
 <h2 id="delete-your-account">Delete your account</h2>

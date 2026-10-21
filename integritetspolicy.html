@@ -18,7 +18,7 @@
 </header>
 <main class="legal" id="innehall">
 <h1>Integritetspolicy</h1>
-<p class="date">Gäller från 1 oktober 2026. Uppdaterad 16 oktober 2026.</p>
+<p class="date">Gäller från 21 oktober 2026.</p>
 <p>Matro är en app för hushållet: inköpslista, veckans mat, recept och utgifter som ni delar med varandra. Här står vilka uppgifter appen sparar om dig, varför, var de finns och hur du tar bort dem. Det mesta är likadant på iPhone och Android; där något skiljer sig står det vad som gäller om du använder Matro på Android.</p>
 <h2 id="kontakt">Kontakt</h2>
 <p>Frågor om dina uppgifter skickar du till team.app.consortium{at}gmail{dot}com.</p>
@@ -31,22 +31,33 @@
 <li><strong>Matpreferenser:</strong> kost (till exempel vegetarisk) och det du undviker (till exempel gluten, nötter eller koriander). Det sparas bara om du själv väljer att fylla i det, och du kan ta bort det när du vill.</li>
 <li><strong>Notiser:</strong> om du slår på notiser en kod för din telefon (APNs-token på iPhone, FCM-token på Android) och om det är en iPhone eller en Android-telefon. På Android sparas också vilket språk du har appen på, så att notisen kan skrivas på ditt språk. Och de notiser som skickats till dig.</li>
 <li><strong>Souschefen och Matro Plus:</strong> hur många uppdrag hemmet gett souschefen (Matros AI-funktioner) per månad och av vilket slag (till exempel en guide eller en fråga), vilka uppdrag hemmet tjänat, och om du köper Matro Plus: köpets id hos Apple eller, på Android, köpets kod hos Google Play (purchase token), vilken prenumeration, dess status, till när den gäller och om den är i en gratis provperiod. Själva uppdragens innehåll sparas inte för det.</li>
-<li><strong>Souschefens anrop på Android:</strong> på Android går souschefens uppdrag via vår server. För varje anrop sparas en kort logg: vem som gjorde det, i vilket hem, vilket slags uppdrag, om det drog ett av hemmets uppdrag, om det gick bra och hur stort det var (antal tokens). Vad du frågade och vad souschefen svarade sparas aldrig, varken där eller i serverns loggar.</li>
+<li><strong>Souschefens anrop i molnet:</strong> när souschefen arbetar i molnet (på Android alltid, på iPhone när Apple Intelligence inte är igång) går uppdragen via vår server. För varje anrop sparas en kort logg: vem som gjorde det, i vilket hem, vilket slags uppdrag, om det drog ett av hemmets uppdrag, om det gick bra och hur stort det var (antal tokens). Vad du frågade och vad souschefen svarade sparas aldrig, varken där eller i serverns loggar.</li>
+<li><strong>Ditt val om användningsstatistik:</strong> om du sagt ja eller nej, och när. Det sparas i ditt konto så att vi kan räkna hur många som valt ja, och följer med dig till en ny telefon.</li>
 <li><strong>Kraschrapporter:</strong> om appen kraschar eller hänger sig skickar den en teknisk rapport: var i koden det hände, appens version, systemets version (iOS eller Android) och telefonmodell. Rapporten innehåller inget du lagt in och kopplas inte till dig eller ditt konto.</li>
 </ul>
-<p>Vi samlar inte in din position, dina kontakter eller något för reklam, och vi använder ingen analys- eller spårningstjänst.</p>
+<p>Vi samlar inte in din position eller dina kontakter, vi använder inget reklam-id och ingen spårning mellan appar, och vi visar ingen reklam. Statistik om hur appen används samlas bara in om du själv säger ja (se Användningsstatistik).</p>
 <h2 id="kamera-ansikte-och-mikrofon">Kamera, ansikte och mikrofon</h2>
 <ul>
 <li><strong>Profilbilden tas med ett leende.</strong> När du tar den använder appen den främre kameran och telefonens ansiktsspårning (på iPhone ARKit) för att se hur mycket du ler. Det sker bara i telefonen och bara medan kameran är öppen: inga ansiktsdata sparas, skickas någonstans eller används till något annat. Det enda som sparas är bilden du själv väljer att använda.</li>
 <li><strong>Kameran</strong> används också när du fotar ett recept eller en rätt. Bilden sparas bara om du sparar receptet.</li>
 <li><strong>Säg din lista:</strong> när du pratar in varor tolkas ljudet i telefonen. Varken ljud eller text skickas till oss; det som sparas är varorna som hamnar på listan. På Android-telefoner som inte kan tolka tal i telefonen används telefonens taltjänst (Googles taligenkänning), och då kan ljudet behandlas av Google enligt deras villkor.</li>
 </ul>
+<h2 id="anvandningsstatistik">Användningsstatistik</h2>
+<ul>
+<li><strong>Bara om du säger ja.</strong> Första gången frågar appen "Hjälp oss göra Matro bättre". Säger du nej, eller inte svarar, skickas ingenting och verktyget för statistik startas inte ens. Du kan ändra dig när du vill: Inställningar → Konto och integritet → Dela användningsstatistik. Slår du av den slutar insamlingen direkt.</li>
+<li><strong>Vad som samlas:</strong> vilka funktioner som används och hur ofta, till exempel att en vecka planerades, att ett recept togs in eller att en lista lästes in med rösten; hur stegen i ett köp av Matro Plus gick (att erbjudandet visades, vilken plan du valde, om köpet gick igenom); en grov sorts felkod (till exempel "inget nät") när något gick fel; hur lång tid något tog; och appens version, telefonmodell och systemversion, språk, hur många som är med i hemmet, hur länge hemmet funnits och om det har Matro Plus.</li>
+<li><strong>Vem det gäller:</strong> en kod som räknas ut ur ditt konto och ditt hem på ett sätt som inte går att vända tillbaka (en hash). Koden är ett pseudonym, inte ditt namn, och den följer med dig mellan dina telefoner.</li>
+<li><strong>Aldrig:</strong> namn, e-postadress, recept, inköpsrader, söktexter, frågor till souschefen, bilder, position, kontakter eller något reklam-id. Händelserna har fasta namn och bara fasta värden, aldrig text som du skrivit.</li>
+<li><strong>Vem som behandlar den:</strong> PostHog Inc. behandlar statistiken för vår räkning, på servrar inom EU (Frankfurt), enligt ett personuppgiftsbiträdesavtal. Den används inte för reklam och säljs inte.</li>
+<li><strong>Grund:</strong> ditt samtycke (artikel 6.1 a i GDPR). Du kan ta tillbaka det när du vill utan att det påverkar något i appen.</li>
+</ul>
 <h2 id="varfor">Varför</h2>
 <ul>
 <li>För att appen ska fungera: visa samma lista, vecka och recept för alla i hemmet och räkna ut vem som är skyldig vad. Det är grunden för nästan allt vi sparar (avtal, artikel 6.1 b i GDPR).</li>
 <li>Matpreferenser sparas för att välja förslag som passar hemmet. Det du undviker sparas med ditt samtycke (artikel 9.2 a). Du ger det genom att välja något, och tar tillbaka det genom att välja bort det.</li>
 <li>Notiser skickas bara om du har slagit på dem.</li>
-<li>Kontrollen med Google Play Integrity, gränsen för hur många anrop till souschefen en person kan göra och loggen över anropen finns för att skydda tjänsten mot missbruk (berättigat intresse, artikel 6.1 f).</li>
+<li>Statistik om hur appen används samlas bara in med ditt samtycke (artikel 6.1 a), för att vi ska se vad som används, vad som går fel och hur köpet av Matro Plus fungerar, och kunna göra appen bättre.</li>
+<li>Kontrollen med Google Play Integrity och Apples App Attest, gränsen för hur många anrop till souschefen en person kan göra och loggen över anropen finns för att skydda tjänsten mot missbruk (berättigat intresse, artikel 6.1 f).</li>
 </ul>
 <h2 id="vem-ser-vad">Vem ser vad</h2>
 <ul>
@@ -59,10 +70,12 @@
 <ul>
 <li><strong>Supabase</strong> lagrar databasen och bilderna och kör vår server, inom EU (Irland). Profilbilderna ligger där krypterade.</li>
 <li><strong>Apple</strong> sköter inloggning med Apple, notiser till iPhone och, om du använder dem, Apples AI-funktioner för att läsa recept. Med Apples Private Cloud Compute lämnar texten bara telefonen för att tolkas och sparas inte.</li>
-<li><strong>Anthropic</strong> (USA) läser recept, skriver guider och svarar på frågor åt souschefen, och bara om du har tillåtit det. På iPhone gäller det telefoner som inte har Apple Intelligence igång, och telefonen skickar uppdraget direkt till Anthropic. På Android går alla souschefens uppdrag till Anthropic via vår server hos Supabase, som skickar dem vidare utan att spara innehållet. Receptets text och bilder skickas dit för att läsas. Anthropic behandlar dem för vår räkning, inte för att träna sina modeller, och överföringen till USA sker med EU:s standardavtalsklausuler.</li>
+<li><strong>Anthropic</strong> (USA) läser recept, skriver guider och svarar på frågor åt souschefen, och bara om du har tillåtit det. På iPhone gäller det telefoner som inte har Apple Intelligence igång; på Android alla souschefens uppdrag. Uppdragen går till Anthropic via vår server hos Supabase, som skickar dem vidare utan att spara innehållet. Receptets text och bilder skickas dit för att läsas. Anthropic behandlar dem för vår räkning, inte för att träna sina modeller, och överföringen till USA sker med EU:s standardavtalsklausuler.</li>
+<li><strong>PostHog</strong> (PostHog Inc.) tar emot användningsstatistiken, bara om du sagt ja, och lagrar den inom EU (Frankfurt).</li>
 <li><strong>Google</strong> sköter inloggning om du loggar in med Google.</li>
 <li><strong>Google Firebase Cloud Messaging</strong> levererar notiser till Android-telefoner. Google får då telefonens notiskod och notisens innehåll: rubrik, text och ibland en bild på rätten. Texten skrivs på vår server, på det språk du har appen på.</li>
 <li><strong>Google Play Integrity</strong> kontrollerar på Android att anrop till souschefen kommer från den riktiga Matro-appen från Google Play på en riktig telefon. Appen ber Google om ett kontrollbevis (integrity token) för just det anropet, och vår server låter Google läsa av det. Google tar fram svaret utifrån uppgifter om appen, telefonen och om appen är hämtad från Google Play. Google får inte anropets innehåll, bara ett kontrollvärde (hash) av det, och vi sparar inte svaret.</li>
+<li><strong>Apples App Attest</strong> kontrollerar på iPhone att anrop till souschefen kommer från den riktiga Matro-appen på en riktig iPhone. Telefonen skapar en nyckel som Apple intygar en gång, och varje anrop signeras med den; vår server kontrollerar signaturen. Vi sparar nyckelns offentliga del och en räknare, inget annat, och Apple får inte anropets innehåll.</li>
 <li>Betalning för en prenumeration sköts av <strong>Apple App Store</strong> på iPhone och av <strong>Google Play</strong> på Android. Vi ser aldrig dina kortuppgifter. Vår server hämtar köpets status direkt från Apple eller Google för att ge hemmet Matro Plus.</li>
 </ul>
 <h2 id="hur-lange">Hur länge</h2>
@@ -73,6 +86,7 @@
 <li>Skickade notiser tas bort efter 30 dagar.</li>
 <li>Loggen över souschefens anrop via vår server tas bort efter två dagar.</li>
 <li>Kraschrapporter tas bort efter sex månader.</li>
+<li>Användningsstatistiken sparas hos PostHog i 12 månader och tas sedan bort.</li>
 <li>När du raderar ditt konto tas dina uppgifter bort direkt (se nedan).</li>
 </ul>
 <h2 id="dina-rattigheter">Dina rättigheter</h2>
@@ -81,7 +95,7 @@
 <li><strong>Ändra:</strong> det mesta ändrar du direkt i appen. Annat ändrar vi om du hör av dig.</li>
 <li><strong>Ta bort profilbilden:</strong> Inställningar → tryck på dig själv → Ta bort bilden.</li>
 <li><strong>Radera ditt konto:</strong> se nedan.</li>
-<li><strong>Ta tillbaka samtycke:</strong> välj bort det du undviker under Inställningar → Mat.</li>
+<li><strong>Ta tillbaka samtycke:</strong> välj bort det du undviker under Inställningar → Mat. Slå av användningsstatistiken under Inställningar → Konto och integritet → Dela användningsstatistik. Vill du att redan insamlad statistik om dig raderas, mejla oss, så tar vi bort den.</li>
 <li><strong>Klaga:</strong> du kan alltid vända dig till Integritetsskyddsmyndigheten (IMY), imy.se.</li>
 </ul>
 <h2 id="radera-ditt-konto">Radera ditt konto</h2>
