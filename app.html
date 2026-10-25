@@ -15,6 +15,8 @@
   var store = apple ? "https://apps.apple.com/app/id6816677523"
     : android ? "https://play.google.com/store/apps/details?id=se.flipware.hem" : null;
   if (store && !/[?&]stay\b/.test(location.search)) location.replace(store);
+  // Anywhere else, a browser that doesn't read Swedish gets the English page (?sv keeps this one).
+  else if (!store && !/[?&]sv\b/.test(location.search) && !/^sv\b/i.test(navigator.language || "")) location.replace("en/app" + location.search);
 })();
 </script>
 <meta name="description" content="Matro finns till iPhone, iPad och Android: veckans middagar, inköpslistan och recepten för hela hushållet.">
@@ -25,10 +27,10 @@
 <meta property="og:title" content="Hämta Matro – veckomeny & inköpslista">
 <meta property="og:description" content="Veckans middagar, inköpslistan och recepten för hela hushållet. Till iPhone, iPad och Android: App Store och Google Play.">
 <!-- The link preview in Messages, WhatsApp and the like: a "get the app" card, not a screenshot (felrapport #347). -->
-<meta property="og:image" content="https://ftronnbe.github.io/hem-public/img/get-matro.jpg">
+<meta property="og:image" content="https://ftronnbe.github.io/hem-public/img/get-matro-2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Matros ikon: Hämta i App Store eller på Google Play">
+<meta property="og:image:alt" content="Matros ikon med märkena Hämta i App Store och Ladda ned på Google Play">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" hreflang="en" href="en/app">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230B0B10'/%3E%3Cpath d='M7 15 16 7.5 25 15v9a1 1 0 0 1-1 1h-5v-6h-6v6H8a1 1 0 0 1-1-1z' fill='none' stroke='%23F2A35E' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -52,8 +54,9 @@
     <h1 style="font-size:clamp(40px, 6vw, 76px);line-height:1.02;margin-bottom:20px">Hämta Matro.</h1>
     <p>Matro finns till iPhone, iPad och Android. Öppnar du den här länken på telefonen kommer du direkt till rätt butik.</p>
     <div class="actions" style="justify-content:center">
-      <a class="pill primary" href="https://apps.apple.com/app/id6816677523">App Store · iPhone och iPad</a>
-      <a class="pill ghost" href="https://play.google.com/store/apps/details?id=se.flipware.hem">Google Play · Android</a>
+      <!-- The stores' own badges, unchanged (Apple's and Google's artwork). -->
+      <a class="store-badge" href="https://apps.apple.com/app/id6816677523"><img src="img/badges/app-store-sv-se.svg" alt="Hämta i App Store" height="56"></a>
+      <a class="store-badge" href="https://play.google.com/store/apps/details?id=se.flipware.hem"><img src="img/badges/google-play-sv.png" alt="Ladda ned på Google Play" height="56"></a>
     </div>
     <p style="margin-top:30px;font-size:16px;color:var(--text-3)">Har du fått en inbjudan? Skriv in koden från meddelandet när appen frågar.</p>
   </section>
